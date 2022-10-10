@@ -45,7 +45,7 @@ class PasienController extends Controller
      */
     public function show($id)
     {
-        //
+        return 'Halo, saya fungsi show '.$id;
     }
 
     /**
@@ -56,7 +56,7 @@ class PasienController extends Controller
      */
     public function edit($id)
     {
-        //
+        return 'Halo, saya fungsi edit '.$id;
     }
 
     /**
@@ -79,6 +79,6 @@ class PasienController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return 'Halo, saya fungsi destroy '.$id;
     }
 }
