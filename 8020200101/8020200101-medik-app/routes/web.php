@@ -12,10 +12,11 @@ Route::get('pelanggan', [PelangganController::class,'index'])->name('user');
  */
 
 
-Route::get('dokter', [DokterController::class,'index'])->name('dokterindex');
-Route::get('dokter/create', [DokterController::class,'create'])->name('doktercreate');
-Route::get('dokter/1/edit', [DokterController::class,'edit'])->name('dokter1edit');
-Route::get('dokter/2', [DokterController::class,'show'])->name('dokter2show');
+Route::get('dokter', [DokterController::class,'index'])->name('dokter.index');
+Route::get('dokter/create', [DokterController::class,'create'])->name('dokter.create');
+//kurung kurawal menunjukkan id yang dinamis
+Route::get('dokter/{id}/edit', [DokterController::class,'edit'])->name('dokter.edit');
+Route::get('dokter/{id}', [DokterController::class,'show'])->name('dokter.show');
 
 
 Route::get('/', function () {

@@ -12,14 +12,15 @@ class DokterController extends Controller
     }
     public function create()
     {
-        return 'Halo, Saya dokter di fungsi create';
+        return 'Halo, Saya berada dihalaman tambah data dokter';
     }
-    public function edit()
+    //url yang akan dinamis
+    public function edit($id)
     {
-        return 'Halo, saya berada dihalaman edit dengan nilai 1';
+        return 'Halo, saya berada dihalaman edit dengan nilai '.$id;
     }
-    public function show()
+    public function show($id)
     {
-        return 'Halo, saya berada dihalaman show dengan nilai 2';
+        return 'Halo, saya berada dihalaman show dengan nilai '.$id;
     }
 }
