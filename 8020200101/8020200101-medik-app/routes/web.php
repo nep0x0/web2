@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\DokterController;
+use App\Http\Controllers\ObatController;
 use App\Http\Controllers\PasienController;
-use App\Http\Controllers\PelangganController;
-use App\Http\Controllers\ProfilController;
+/* use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\ProfilController; */
 use Illuminate\Support\Facades\Route;
 
 
@@ -20,6 +21,7 @@ Route::get('dokter/{id}/edit', [DokterController::class,'edit'])->name('dokter.e
 Route::get('dokter/{id}', [DokterController::class,'show'])->name('dokter.show');
 
 Route::resource('pasien', PasienController::class);
+Route::resource('obat', ObatController::class);
 
 Route::get('/', function () {
     return view('welcome');
