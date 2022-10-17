@@ -56,7 +56,8 @@ class ObatController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('obat_edit',compact('id'));
+        // return 'saya fungsi edit ke '.$id;
     }
 
     /**
