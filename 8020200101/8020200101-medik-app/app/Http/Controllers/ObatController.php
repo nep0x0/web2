@@ -23,7 +23,8 @@ class ObatController extends Controller
      */
     public function create()
     {
-        return view('obat_index');
+        $data['id'] = 100;
+        return view('obat_index', $data);
     }
 
     /**
